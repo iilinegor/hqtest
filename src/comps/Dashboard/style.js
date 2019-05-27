@@ -13,7 +13,7 @@ export const DashboardStyle = styled.div`
         flex: 1 0 0;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         height: 100%;

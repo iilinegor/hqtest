@@ -345,6 +345,78 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/comps/Dashboard/Bots/index.js":
+/*!*******************************************!*\
+  !*** ./src/comps/Dashboard/Bots/index.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Bots; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ \"./src/comps/Dashboard/Bots/style.js\");\n\n\n\n\nclass Bots extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            _style__WEBPACK_IMPORTED_MODULE_1__[\"BotsStyle\"],\n            null,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'div',\n                { className: 'bots' },\n                [126.85, 34.82, 4.99, 71.0, 10.1, 98.67].map((b, i) =>\n                // <div className={`bot ${i === 1 && 'active'}`}  key={\"bot\" + i}>\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    'div',\n                    { className: 'bot', key: 'bot' + i },\n                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                        'div',\n                        { className: 'icon' },\n                        ' '\n                    ),\n                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                        'div',\n                        { className: 'mode' },\n                        ' Attack'\n                    ),\n                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                        'div',\n                        { className: 'diff' },\n                        ' ',\n                        b,\n                        '%'\n                    ),\n                    i === 1 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { className: 'back' })\n                ))\n            )\n        );\n    }\n}\n\nconst a = {\n    trading_capital: 3.081,\n    trading_capital_currency: 'eth',\n    balance: 14630,\n    on_hold: 8300,\n    bots: [{\n        name: 'yellow_bot',\n        cost: 10000,\n        '24h': 3.15,\n        '7d': 0.065,\n        '30d': 4.1,\n        '60d': 15.04,\n        '90d': 80.25,\n        all_time: 126.85\n    }, {\n        name: 'white_bot',\n        cost: 3800,\n        '24h': 1.5,\n        '7d': 12.0,\n        '30d': 14.15,\n        '60d': 46.5,\n        '90d': 38.4,\n        all_time: 34.82\n    }, {\n        name: 'green_bot',\n        cost: 4200,\n        '24h': 3.33,\n        '7d': -17.6,\n        '30d': -2.5,\n        '60d': 13.0,\n        '90d': 25.1,\n        all_time: 4.99\n    }, {\n        name: 'red_bot',\n        cost: 1500,\n        '24h': -10.8,\n        '7d': 5.5,\n        '30d': 11.4,\n        '60d': 12.1,\n        '90d': 24.36,\n        all_time: 71.0\n    }, {\n        name: 'blue_bot',\n        cost: 7400,\n        '24h': -6.5,\n        '7d': -4.3,\n        '30d': -0.17,\n        '60d': 4.32,\n        '90d': 6.8,\n        all_time: 10.1\n    }, {\n        name: 'orange_bot',\n        cost: 550,\n        '24h': 210.1,\n        '7d': 81.3,\n        '30d': 90.7,\n        '60d': 13.4,\n        '90d': -40.6,\n        all_time: 98.67\n    }]\n};\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Bots/index.js?");
+
+/***/ }),
+
+/***/ "./src/comps/Dashboard/Bots/style.js":
+/*!*******************************************!*\
+  !*** ./src/comps/Dashboard/Bots/style.js ***!
+  \*******************************************/
+/*! exports provided: BotsStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"BotsStyle\", function() { return BotsStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst BotsStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    flex: 1 1 auto;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-transform: uppercase;\n    /* min-height: 300px; */\n    padding: 0.9375rem 1rem;\n\n    .bots {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: center;\n        align-items: flex-end;\n        max-width: 450px;\n        width: 95%;\n        font-size: 0.7rem;\n        font-weight: bolder;\n\n        .bot {\n            position: relative;\n            width: calc(100% / 3 - 0.5em);\n            background-color: #1c293f;\n            text-align: center;\n            margin: 0.5px;\n            border-radius: 0.25rem;\n\n            &::before {\n                content: '';\n                padding-top: 100%;\n                float: left;\n            }\n\n            .mode {\n            }\n\n            .diff {\n            }\n\n            .back {\n                position: absolute;\n                top: 0;\n                left: 0;\n                min-width: 100%;\n                min-height: 100%;\n                border-radius: 1rem;\n                background-image: radial-gradient(circle, #20345000, #20345000, #203450);\n            }\n        }\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Bots/style.js?");
+
+/***/ }),
+
+/***/ "./src/comps/Dashboard/Filters/index.js":
+/*!**********************************************!*\
+  !*** ./src/comps/Dashboard/Filters/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Filters; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ \"./src/comps/Dashboard/Filters/style.js\");\n\n\n\n\nclass Filters extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            _style__WEBPACK_IMPORTED_MODULE_1__[\"FiltersStyle\"],\n            null,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'div',\n                { className: 'label' },\n                ' Time Range:'\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'button',\n                null,\n                ' 24h '\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'button',\n                null,\n                ' 7 days '\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'button',\n                null,\n                ' 30 days '\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'button',\n                { active: 'true' },\n                ' All time '\n            )\n        );\n    }\n}\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Filters/index.js?");
+
+/***/ }),
+
+/***/ "./src/comps/Dashboard/Filters/style.js":
+/*!**********************************************!*\
+  !*** ./src/comps/Dashboard/Filters/style.js ***!
+  \**********************************************/
+/*! exports provided: FiltersStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"FiltersStyle\", function() { return FiltersStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst FiltersStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 0.75rem;\n    font-weight: bolder;\n    padding: 0.625rem 1.25rem;\n    color: #4d6078;\n    /* font-size: 1rem;\n    padding: 0 1rem 0.9375rem;\n    text-transform: uppercase; */\n\n    button {\n        border: 1px solid #273145;\n        border-radius: 1em;\n        background: none;\n        color: #4d6078;\n        font-size: 0.75rem;\n        padding: 0.35em 0.5em;\n    }\n    button[active=\"true\"] {\n        border: 1px solid #9196a0;\n        color: #fff;\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Filters/style.js?");
+
+/***/ }),
+
+/***/ "./src/comps/Dashboard/Graph/index.js":
+/*!********************************************!*\
+  !*** ./src/comps/Dashboard/Graph/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Graph; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ \"./src/comps/Dashboard/Graph/style.js\");\n\n\n\n\nclass Graph extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            _style__WEBPACK_IMPORTED_MODULE_1__[\"GraphStyle\"],\n            null,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'div',\n                { className: 'title' },\n                'Graph'\n            )\n        );\n    }\n}\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Graph/index.js?");
+
+/***/ }),
+
+/***/ "./src/comps/Dashboard/Graph/style.js":
+/*!********************************************!*\
+  !*** ./src/comps/Dashboard/Graph/style.js ***!
+  \********************************************/
+/*! exports provided: GraphStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GraphStyle\", function() { return GraphStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst GraphStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    background-color: #bada5533;\n\n    .title {\n        padding: 75px;\n        text-align: center;\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Dashboard/Graph/style.js?");
+
+/***/ }),
+
 /***/ "./src/comps/Dashboard/Stats/index.js":
 /*!********************************************!*\
   !*** ./src/comps/Dashboard/Stats/index.js ***!
@@ -377,7 +449,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Dashboard; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ \"./src/comps/Dashboard/style.js\");\n/* harmony import */ var _Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stats */ \"./src/comps/Dashboard/Stats/index.js\");\n\n\n\n\n\n\nclass Dashboard extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            _style__WEBPACK_IMPORTED_MODULE_1__[\"DashboardStyle\"],\n            null,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Stats__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)\n        );\n    }\n}\n\n//# sourceURL=webpack:///./src/comps/Dashboard/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Dashboard; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ \"./src/comps/Dashboard/style.js\");\n/* harmony import */ var _Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stats */ \"./src/comps/Dashboard/Stats/index.js\");\n/* harmony import */ var _Graph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Graph */ \"./src/comps/Dashboard/Graph/index.js\");\n/* harmony import */ var _Bots__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Bots */ \"./src/comps/Dashboard/Bots/index.js\");\n/* harmony import */ var _Filters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Filters */ \"./src/comps/Dashboard/Filters/index.js\");\n\n\n\n\n\n\n\n\n\nclass Dashboard extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            _style__WEBPACK_IMPORTED_MODULE_1__[\"DashboardStyle\"],\n            null,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Stats__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Graph__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Bots__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Filters__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null)\n        );\n    }\n}\n\n//# sourceURL=webpack:///./src/comps/Dashboard/index.js?");
 
 /***/ }),
 
@@ -389,7 +461,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DashboardStyle\", function() { return DashboardStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst DashboardStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    flex: 1 1 auto;\n    display: flex;\n    flex-direction: column;\n    overflow-x: hidden;\n    overflow-y: auto;\n    font-size: 1rem;\n\n\n    .item {\n        flex: 1 0 0;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n        width: 100%;\n        height: 100%;\n        min-height: 3.125em;\n        color: #4d6078;\n\n        .icon {\n        }\n\n        .label {\n            font-size: 0.625em;\n            letter-spacing: 0.00625em;\n        }\n\n        .active {\n            color: #fff;\n        }\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Dashboard/style.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DashboardStyle\", function() { return DashboardStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst DashboardStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    flex: 1 1 auto;\n    display: flex;\n    flex-direction: column;\n    overflow-x: hidden;\n    overflow-y: auto;\n    font-size: 1rem;\n\n\n    .item {\n        flex: 1 0 0;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        align-items: center;\n        width: 100%;\n        height: 100%;\n        min-height: 3.125em;\n        color: #4d6078;\n\n        .icon {\n        }\n\n        .label {\n            font-size: 0.625em;\n            letter-spacing: 0.00625em;\n        }\n\n        .active {\n            color: #fff;\n        }\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Dashboard/style.js?");
 
 /***/ }),
 
@@ -413,7 +485,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"FooterStyle\", function() { return FooterStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst FooterStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    display: flex;\n    font-size: 1rem;\n    background: #18283c;\n\n    .item {\n        flex: 1 0 0;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: center;\n        width: 100%;\n        height: 100%;\n        min-height: 3.125em;\n        color: #4d6078;\n\n        .icon {\n        }\n\n        .label {\n            font-size: 0.625em;\n            letter-spacing: 0.00625em;\n        }\n\n        .active {\n            color: #fff;\n        }\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Footer/style.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"FooterStyle\", function() { return FooterStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst FooterStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    display: flex;\n    font-size: 1rem;\n    background: #18283c;\n    \n    .item {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n        align-items: center;\n        width: 100%;\n        height: 3.125rem;\n        color: rgb(77, 96, 120);\n        flex: 1 0 0px;\n\n        .icon {\n        }\n\n        .label {\n            font-size: 0.625em;\n            letter-spacing: 0.00625em;\n        }\n\n        .active {\n            color: #fff;\n        }\n    }\n`;\n\n//# sourceURL=webpack:///./src/comps/Footer/style.js?");
 
 /***/ }),
 
@@ -461,7 +533,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AppStyle\", function() { return AppStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst AppStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    margin: 0px auto;\n    background-color: #112135;\n    background-image: radial-gradient(circle 25vh at top, #016aba44, #016aba11, #016aba00);\n    height: 100vh;\n    width: 100vw;\n    max-width: 968px;\n    overflow: hidden;\n`;\n\n//# sourceURL=webpack:///./src/style.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"AppStyle\", function() { return AppStyle; });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\n\nconst AppStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__[\"default\"].div`\n    /* position: absolute;\n    top: 0;\n    left: 0; */\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    margin: 0px auto;\n    background-color: #112135;\n    background-image: radial-gradient(circle 25vh at top, #016aba44, #016aba11, #016aba00);\n    height: 100vh;\n    width: 100vw;\n    max-width: 800px;\n    overflow: hidden;\n`;\n\n//# sourceURL=webpack:///./src/style.js?");
 
 /***/ })
 

@@ -4,17 +4,16 @@ export const FooterStyle = styled.div`
     display: flex;
     font-size: 1rem;
     background: #18283c;
-
+    
     .item {
-        flex: 1 0 0;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 100%;
-        min-height: 3.125em;
-        color: #4d6078;
+        height: 3.125rem;
+        color: rgb(77, 96, 120);
+        flex: 1 0 0px;
 
         .icon {
         }
