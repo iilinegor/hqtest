@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import bot_arrows from '../../../pic/bot_arrows.png'
+
 export const BotsStyle = styled.div`
     flex: 1 1 auto;
     display: flex;
@@ -33,11 +35,37 @@ export const BotsStyle = styled.div`
 
             height: 100px;
 
+            /* &::after {
+                content: '';
+                position: absolute;
+                top: -40%;
+                right: 50%;
+                width: 100%;
+                height: 6px;
+                background: linear-gradient(99deg, #292f3f, #121521);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            } */
+
             /* &::before {
                 content: '';
                 padding-top: 100%;
                 float: left;
             } */
+
+            .arrows {
+                position: absolute;
+                top: -60px;
+                left: -25px;
+                min-width: 150%;
+                min-height: 150%;
+                background-size: 100% auto;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-image: url(${bot_arrows});
+                pointer-events: none;
+                z-index: 100;
+            }
 
             .icon {
                 background-size: auto 80%;
@@ -49,11 +77,11 @@ export const BotsStyle = styled.div`
             }
 
             .mode {
-                font-size: .8em;
+                font-size: 0.8em;
             }
 
             .diff {
-                font-size: .8em;
+                font-size: 0.8em;
                 color: #5ea853;
                 margin-top: -2px;
             }

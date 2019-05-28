@@ -37,6 +37,7 @@ export default class Bots extends Component {
                                 {b.diff}%
                             </div>
                             {b.name === botName && <div className='back' />}
+                            {b.name === "yellow_bot" && <div className='arrows' />}
                         </div>
                     ))}
                 </div>
