@@ -14,9 +14,19 @@ export const FooterStyle = styled.div`
         background-repeat: no-repeat;
         opacity: 0.2;
 
+        .note {
+            position: relative;
+            background-color: #fb9819;
+            height: 1em;
+            width: 1em;
+            border-radius: 1em;
+            padding: 0.3em;
+            text-align: center;
+            display: none;
+        }
     }
 
     .active {
-            opacity: 1;
-        }
+        opacity: 1;
+    }
 `
