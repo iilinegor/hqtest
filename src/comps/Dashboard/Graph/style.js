@@ -1,11 +1,21 @@
 import styled from 'styled-components'
 
 export const GraphStyle = styled.div`
-    /* background-color: #bada5533; */
+    .diff {
+        color: #5ea853;
+        font-weight: normal;
+        font-size: 1.2em;
+        position: relative;
+        top: 60px;
+        left: calc(50% - 50px);
+        margin-bottom: -25px;
+        z-index: 10;
+        width: 100px;
+        text-align: center;
+    }
 
-    .title {
-        /* padding: 75px; */
-        /* text-align: center; */
+    .minus {
+        color: #f2427e;
     }
 
     .recharts-cartesian-axis-tick-value {
@@ -14,7 +24,8 @@ export const GraphStyle = styled.div`
         fill: hsla(0, 0%, 100%, 0.25);
     }
 
-    .recharts-cartesian-axis-tick-line, .recharts-cartesian-axis-line {
+    .recharts-cartesian-axis-tick-line,
+    .recharts-cartesian-axis-line {
         opacity: 0;
     }
 `

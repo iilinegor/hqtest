@@ -12,9 +12,11 @@ export default class Stats extends Component {
                     <div className='other'>
                         <div className='label'> Balance:</div>
                         <div className='value'> 10 850</div>
+                        <div className='coin' />
                         <br />
                         <div className='label'> On hold:</div>
                         <div className='value'> 24 000</div>
+                        <div className='coin' />
                     </div>
                 </div>
             </StatsStyle>

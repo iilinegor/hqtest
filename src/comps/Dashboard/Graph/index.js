@@ -1,25 +1,8 @@
 import React, { Component } from 'react'
 
-import {
-    AreaChart,
-    Area,
-    XAxis,
-    YAxis,
-    Tooltip,
-    CartesianGrid,
-    Brush,
-    Legend,
-    ReferenceArea,
-    ReferenceLine,
-    ReferenceDot,
-    ResponsiveContainer,
-    LabelList,
-    Label
-} from 'recharts'
+import { AreaChart, Area, XAxis, CartesianGrid } from 'recharts'
 
 import { GraphStyle } from './style'
-
-const data = Array.from(Array(25).keys()).map(i => ({ amt: 1500 + Math.random() * 1000, time: i }))
 
 const renderCustomAxisTick = ({ payload, x, y, width, height, value }) => {
     if (payload.value !== 0 && payload.value !== 24)
@@ -38,7 +21,9 @@ const renderCustomAxisTick = ({ payload, x, y, width, height, value }) => {
 export default class Graph extends Component {
     constructor(props) {
         super(props)
-        this.state = { data, width: 800 }
+        this.state = {
+            width: 800
+        }
     }
 
     componentDidMount = () => {
@@ -59,14 +44,19 @@ export default class Graph extends Component {
     }
 
     render() {
-        const { data, width } = this.state
+        const { width } = this.state
+        const { data, diff } = this.props
 
         return (
             <GraphStyle>
-                <AreaChart width={width} height={150} data={this.state.data} syncId='test'>
+                <div className={`diff ${diff < 0 && 'minus'}`}>
+                    {diff > 0 && '+'}
+                    {diff}%
+                </div>
+                <AreaChart width={width} height={170} data={data} syncId='test'>
                     <defs>
                         <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
-                            <stop offset='0%' stopColor='#0080e3' stopOpacity={0.85} />
+                            <stop offset='0%' stopColor='#0080e3' stopOpacity={0.75} />
                             <stop offset='95%' stopColor='#0080e3' stopOpacity={0} />
                         </linearGradient>
                     </defs>
@@ -80,6 +70,7 @@ export default class Graph extends Component {
                         stroke='#0080e3'
                         stroke-width='3'
                         fill='url(#colorUv)'
+                        animationDuration={500}
                     />
                 </AreaChart>
             </GraphStyle>

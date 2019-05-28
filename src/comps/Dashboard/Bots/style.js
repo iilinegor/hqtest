@@ -6,8 +6,7 @@ export const BotsStyle = styled.div`
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    /* min-height: 300px; */
-    padding: 0.9375rem 1rem;
+    padding: 0rem 1rem;
 
     .bots {
         display: flex;
@@ -26,17 +25,41 @@ export const BotsStyle = styled.div`
             text-align: center;
             margin: 0.5px;
             border-radius: 0.25rem;
+            display: flex;
 
-            &::before {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            height: 100px;
+
+            /* &::before {
                 content: '';
                 padding-top: 100%;
                 float: left;
+            } */
+
+            .icon {
+                background-size: auto 80%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
+                margin-bottom: -5px;
             }
 
             .mode {
+                font-size: .8em;
             }
 
             .diff {
+                font-size: .8em;
+                color: #5ea853;
+                margin-top: -2px;
+            }
+
+            .minus {
+                color: #f2427e;
             }
 
             .back {

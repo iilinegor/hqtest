@@ -50,12 +50,7 @@ module.exports = {
 			{
 				test: /\.png$/,
 				exclude: [/node_modules/],
-				loader: "url-loader&limit=10000&mimetype=image/png"
-			},
-			{
-				test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-				exclude: [/node_modules/],
-				loader: 'url-loader?limit=100000'
+				loader: "file-loader?limit=10000&mimetype=image/png"
 			}
 		]
 	}

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import hq_coin from '../../../pic/hq_coin.png'
+
 export const StatsStyle = styled.div`
     font-size: 1rem;
     padding: 0 1rem 0.9375rem;
@@ -37,9 +39,22 @@ export const StatsStyle = styled.div`
 
             .value {
                 color: #fff;
-                width: 65px;
+                width: 55px;
                 text-align: right;
                 font-weight: bolder;
+            }
+
+            .coin {
+                background-image: url(${hq_coin});
+                background-size: 100% auto;
+                background-position: 50% 50%;
+                width: 1.2em;
+                height: 1.2em;
+                /* margin: 0.6em 0.6em 0; */
+                margin-bottom: -0.25em;
+                margin-left: 0.35em;
+                /* width: 30px;
+                height: 30px; */
             }
         }
     }
